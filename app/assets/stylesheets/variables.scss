@@ -1,0 +1,15 @@
+$container_border: #dadada;
+$text_gray: #8c8c8c;
+
+@mixin font_roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+@mixin font_ptsans {
+	font-family: 'PT Sans', sans-serif;
+}
+@mixin d_i {
+	display: inline-block;
+	//display : inline;
+    //zoom : 1;
+}

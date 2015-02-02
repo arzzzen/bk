@@ -1,0 +1,17 @@
+img, div, a {
+	behavior: url('/iepngfix.htc');
+}
+.header {
+	.top_menu {
+		a {
+			&.icon_menu {
+				background-position: 24px 6px;
+			}
+		}
+	}
+}
+.our_mission {
+	p {
+		margin: 15px 0 14px;
+	}
+}

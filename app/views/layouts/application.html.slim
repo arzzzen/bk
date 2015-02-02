@@ -1,0 +1,36 @@
+doctype strict
+html
+	head
+		title Bk
+  		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+		/[if lt IE 9]
+			= javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
+		/[if IE 6]
+			= stylesheet_link_tag "ie6", :media => "all"
+			= javascript_include_tag "iepngfix_tilebg.js"
+	body
+		.container
+			.wrapper.header
+				.top_menu
+					a.icon_menu href="#"
+						| Услуги
+					a href="#" О компании
+					a href="#" Отзывы
+					a.connect_us href="#" Связаться с нами
+				a.logo href='/'
+					img src=image_path('logo.png')
+
+		= yield
+		.container.footer
+				.wrapper
+					img.footer_logo src=image_path('footer_logo.png')
+					.copy
+						| 2014 © ООО «Консалтинговая группа «Белая Карта». Все права защищены.
+						br
+						a href='#' Политика конфиденциальности
+					.site_dev
+						| Разработка сайта
+						br
+						a href='#' Медиа-агентство Буквы

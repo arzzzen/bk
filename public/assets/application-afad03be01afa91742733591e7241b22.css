@@ -1,0 +1,351 @@
+@import url(normalize.css);
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin,cyrillic";
+@import "http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic";
+@import url(tinycarousel.css);
+/* line 1, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.clearfix:before, .our_mission:before, .slider:before, .our_partners:before, .bk_promo:before, .footer:before,
+.clearfix:after,
+.our_mission:after,
+.slider:after,
+.our_partners:after,
+.bk_promo:after,
+.footer:after {
+  content: "";
+  display: table;
+}
+
+/* line 6, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.clearfix:after, .our_mission:after, .slider:after, .our_partners:after, .bk_promo:after, .footer:after {
+  clear: both;
+}
+
+/* line 9, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.clearfix, .our_mission, .slider, .our_partners, .bk_promo, .footer {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 12, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.pull_left {
+  float: left;
+}
+
+/* line 15, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.pull_right {
+  float: right;
+}
+
+/* line 18, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.text_left {
+  text-align: left;
+}
+
+/* line 21, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.text_right {
+  text-align: right;
+}
+
+/* line 24, /home/arsen/www/bk/app/assets/stylesheets/defaults.scss */
+.text_center {
+  text-align: center;
+}
+
+/* line 7, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+body {
+  color: #8c8c8c;
+}
+
+/* line 11, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+/* line 16, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.container {
+  border-bottom: 1px solid #dadada;
+}
+
+/* line 19, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/* line 23, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 28, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu {
+  float: right;
+  padding-top: 37px;
+}
+/* line 32, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 30px;
+}
+/* line 37, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu a:hover {
+  color: #191919;
+}
+/* line 40, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu a.icon_menu {
+  padding-left: 24px;
+  background-image: url("/assets/icon_menu-9c715c38c7c047b67dca986ccfce33ac.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+/* line 46, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu a.icon_menu:hover {
+  background-image: url("/assets/icon_menu_hover-59b339a33b1345e6945519f04eed085a.png");
+}
+/* line 49, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.header .top_menu a.connect_us {
+  font-size: 14px;
+  margin-left: 35px;
+  width: 135px;
+  line-height: 27px;
+  height: 27px;
+  background-image: url("/assets/contact_us-f4d896f0f86618961117547f38c8f863.jpg");
+  background-repeat: no-repeat;
+}
+
+/* line 61, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission {
+  position: relative;
+  padding-bottom: 55px;
+  text-align: center;
+  background-image: url("/assets/our_mission-d6ea10185514cd398250bbe08e27ccb1.jpg");
+  background-repeat: repeat-x;
+}
+/* line 68, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 34px 0 30px;
+  font-size: 30px;
+  font-weight: 300;
+}
+/* line 74, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: #3e3e3e;
+}
+/* line 79, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission .compas_cont {
+  width: 1330px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 83, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission .compas_cont .compas {
+  position: absolute;
+  width: 535px;
+  height: 230px;
+  top: 0;
+  right: 0;
+  background-image: url("/assets/compas-20d3d115f3ffde17e5b837a64fdf0634.png");
+}
+/* line 92, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_mission .our_mission_arrow {
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 13px;
+  bottom: 32px;
+  left: 50%;
+  margin-left: -12.5px;
+  background-image: url("/assets/our_mission_arrow-b19bdfebca170c79e5cae7168b758e95.png");
+}
+
+/* line 103, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider {
+  position: relative;
+  overflow: visible;
+}
+/* line 107, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .slider_left,
+.slider .slider_right {
+  cursor: pointer;
+  width: 20px;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  margin-top: -19px;
+}
+/* line 116, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .slider_left {
+  background-image: url("/assets/slider_left-a40465aa7bfcfce727af9f4ba270cd5a.png");
+  left: -40px;
+}
+/* line 120, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .slider_right {
+  right: -40px;
+  background-image: url("/assets/slider_right-82454a3a7873a845f64d85060196f97d.png");
+}
+/* line 124, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 128, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .viewport .overview {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  list-style: none;
+}
+/* line 136, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slider .viewport li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  border: none;
+  text-align: center;
+}
+
+/* line 147, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slides {
+  padding: 90px 0 62px;
+}
+/* line 150, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slides .slider .viewport {
+  height: 360px;
+}
+/* line 152, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.slides .slider .viewport li {
+  width: 286.7px;
+}
+
+/* line 158, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners {
+  height: 220px;
+  text-align: center;
+  background-color: #2e2d2c;
+  background-image: url("/assets/our_partners-3e06952f904489791d1879c9897951a4.png");
+  background-repeat: repeat-x;
+  background-position: 0;
+}
+/* line 166, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 34px 0 30px;
+  font-size: 24px;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+/* line 174, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners .slider .slider_left {
+  background-image: url("/assets/slider_partners_left-f9a9c286b5a39580d9fa2459599d1e7c.png");
+}
+/* line 177, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners .slider .slider_right {
+  background-image: url("/assets/slider_partners_right-1f5fae9438a5dcae70b991c1ee60deb8.png");
+}
+/* line 180, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners .slider .viewport {
+  height: 70px;
+}
+/* line 182, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.our_partners .slider .viewport li {
+  padding-left: 28px;
+}
+
+/* line 188, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.bk_promo {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+/* line 193, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.bk_promo h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px 0;
+  font-size: 30px;
+  color: #949494;
+  font-weight: 300;
+}
+/* line 200, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.bk_promo p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+/* line 204, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.bk_promo .read_more {
+  display: inline-block;
+  font-size: 14px;
+  color: #59839e;
+  border-bottom: 1px dotted;
+}
+/* line 209, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.bk_promo .read_more:hover {
+  border-bottom: none;
+}
+
+/* line 214, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.map {
+  position: relative;
+}
+/* line 216, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.map .map_shadow_top,
+.map .map_shadow_bottom {
+  position: absolute;
+  height: 18px;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+/* line 224, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.map .map_shadow_top {
+  background-image: url("/assets/map_shadow_top-af54edccc81aac36c3722e795ffb75fa.png");
+  top: 0;
+}
+/* line 228, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.map .map_shadow_bottom {
+  background-image: url("/assets/map_shadow_bottom-2540c5f8f9ef46d33676af1679206b86.png");
+  bottom: 0;
+}
+/* line 232, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.map #map {
+  height: 400px;
+}
+
+/* line 236, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.footer {
+  font-family: 'PT Sans', sans-serif;
+  padding: 28px 0 25px;
+  border-bottom: none;
+  color: #888888;
+}
+/* line 242, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.footer a {
+  color: #6b7a84;
+}
+/* line 245, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.footer .footer_logo {
+  float: left;
+  width: 72px;
+  height: 57px;
+}
+/* line 250, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.footer .copy {
+  padding-top: 5px;
+  float: left;
+  padding-left: 30px;
+}
+/* line 255, /home/arsen/www/bk/app/assets/stylesheets/application.css.scss */
+.footer .site_dev {
+  padding-top: 5px;
+  float: right;
+  text-align: right;
+}

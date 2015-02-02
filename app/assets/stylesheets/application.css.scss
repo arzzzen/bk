@@ -1,0 +1,260 @@
+@import 'normalize.css';
+@import 'variables.scss';
+@import 'defaults.scss';
+@import 'fonts.scss';
+@import 'tinycarousel.css';
+
+body {
+	color: $text_gray;
+}
+
+a {
+	text-decoration: none;
+	color: $text_gray;
+}
+
+.container {
+	border-bottom: 1px solid $container_border;
+}
+.wrapper {
+	width: 860px;
+	margin: 0 auto;
+}
+.header {
+	padding-top: 40px;
+	padding-bottom: 35px;
+	@include font_roboto;
+
+	.top_menu {
+		float: right;
+		padding-top: 37px;
+
+		a {
+			@include d_i;
+			font-size: 18px;
+			font-weight: 300;
+			padding-left: 30px;
+			&:hover {
+				color: #191919;
+			}
+			&.icon_menu {
+				padding-left: 24px;
+				background-image: url(image_path('icon_menu.png'));
+				background-repeat: no-repeat;
+				background-position: 0 50%;
+			}
+			&.icon_menu:hover {
+				background-image: url(image_path('icon_menu_hover.png'));
+			}
+			&.connect_us {
+				font-size: 14px;
+				margin-left: 35px;
+				width: 135px;
+				line-height: 27px;
+				height: 27px;
+				background-image: url(image_path('contact_us.jpg'));
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+.our_mission {
+	@extend .clearfix;
+	position: relative;
+	padding-bottom: 55px;
+	text-align: center;
+	background-image: url(image_path('our_mission.jpg'));
+	background-repeat: repeat-x;
+	h2 {
+		@include font_roboto;
+		margin: 34px 0 30px;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	p {
+		@include font_ptsans;
+		font-size: 16px;
+		color: #3e3e3e;
+	}
+	.compas_cont {
+		width: 1330px;
+		margin: 0 auto;
+		position: relative;
+		.compas {
+			position: absolute;
+			width: 535px;
+			height: 230px;
+			top: 0;
+			right: 0;
+			background-image: url(image_path('compas.png'));
+		}
+	}
+	.our_mission_arrow {
+		@include d_i;
+		position: absolute;
+		width: 25px;
+		height: 13px;
+		bottom: 32px;
+		left: 50%;
+		margin-left: -12.5px;
+		background-image: url(image_path('our_mission_arrow.png'));
+	}
+}
+.slider {
+	@extend .clearfix;
+	position: relative;
+	overflow: visible;
+	.slider_left,
+	.slider_right {
+		cursor: pointer;
+		width: 20px;
+		height: 38px;
+		position: absolute;
+		top: 50%;
+		margin-top: -19px;
+	}
+	.slider_left {
+		background-image: url(image_path('slider_left.png'));
+		left: -40px;
+	}
+	.slider_right {
+		right: -40px;
+		background-image: url(image_path('slider_right.png'));
+	}
+	.viewport {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		.overview {
+			position: absolute;
+			padding: 0;
+			margin: 0;
+			left: 0;
+			top: 0; 
+			list-style: none;
+		}
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			height: auto;
+			border: none;
+			text-align: center;
+		}
+	}
+
+}
+.slides {
+	padding: 90px 0 62px;
+	.slider {
+		.viewport {
+			height: 360px;
+			li {
+				width: 286.7px;
+			}
+		}
+	}
+}
+.our_partners {
+	@extend .clearfix;
+	height: 220px;
+	text-align: center;
+	background-color: #2e2d2c;
+	background-image: url(image_path('our_partners.png'));
+	background-repeat: repeat-x;
+	background-position: 0;
+	h2 {
+		@include font_roboto;
+		margin: 34px 0 30px;
+		font-size: 24px;
+		color: $text_gray;
+		font-weight: 300;
+	}
+	.slider {
+		.slider_left {
+			background-image: url(image_path('slider_partners_left.png'));
+		}
+		.slider_right {
+			background-image: url(image_path('slider_partners_right.png'));
+		}
+		.viewport {
+			height: 70px;
+			li {
+				padding-left: 28px;
+			}
+		}
+	}
+}
+.bk_promo {
+	@extend .clearfix;
+	padding-top: 55px;
+	padding-bottom: 60px;
+	text-align: center;
+	h2 {
+		@include font_roboto;
+		margin: 30px 0;
+		font-size: 30px;
+		color: #949494;
+		font-weight: 300;
+	}
+	p {
+		@include font_ptsans;
+		font-size: 16px;
+	}
+	.read_more {
+		@include d_i;
+		font-size: 14px;
+		color: #59839e;
+		border-bottom: 1px dotted;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+}
+.map {
+	position: relative;
+	.map_shadow_top,
+	.map_shadow_bottom {
+		position: absolute;
+		height: 18px;
+		width: 100%;
+		left: 0;
+		z-index: 1;
+	}
+	.map_shadow_top {
+		background-image: url(image_path('map_shadow_top.png'));
+		top: 0;
+	}
+	.map_shadow_bottom {
+		background-image: url(image_path('map_shadow_bottom.png'));
+		bottom: 0;
+	}
+	#map {
+		height: 400px;
+	}
+}
+.footer {
+	@extend .clearfix;
+	@include font_ptsans;
+	padding: 28px 0 25px;
+	border-bottom: none;
+	color: #888888;
+	a {
+		color: #6b7a84;
+	}
+	.footer_logo {
+		float: left;
+		width: 72px;
+		height: 57px;
+	}
+	.copy {
+		padding-top: 5px;
+		float: left;
+		padding-left: 30px;
+	}
+	.site_dev {
+		padding-top: 5px;
+		float: right;
+		text-align: right;
+	}
+}
