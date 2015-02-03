@@ -16,26 +16,23 @@
 //= require_tree .
 
 $(function() {
-	// $('#slider').slider();
 	$('.slider').tinycarousel();
 
-	var addrCoords = [59.949109136999404, 30.3838618971461]
-		,zoom = 17
-		,$map = $('#map');
-	if (typeof document.body.style.maxHeight != "undefined") {
-		ymaps.ready(function() {
-			$map.contactMap(addrCoords, zoom);
-		});
-	} else{
-		// IE6, older browsers
-		var statisMapUrl = 'http://static-maps.yandex.ru/1.x/?ll='+addrCoords.join(',')+'&'+
-			'size='+$map.outerWidth()+','+$map.outerHeight()+'&z='+zoom+'&l=map&pt='+addrCoords.join(',')+',pmwtm1~'+addrCoords.join(',')+','+
-			'pmwtm99';
-		$('#map').html($('<img>').attr('src', statisMapUrl));
-	}
+	$('#map').contactMap();
 
 	$('#our_mission_arrow').on('click', function(e) {
 		e.preventDefault();
 		$('.our_mission').slideToggle();
+	});
+
+	$('#page_up').on('click', function(e) {
+		e.preventDefault();
+		$('html,body').animate({ scrollTop: 0 }, '1000', 'swing');
+	});
+
+	$('#read_more').on('click', function(e) {
+		e.preventDefault();
+		$('.promo_text.mandatory .promo_fade').fadeToggle();
+		$('.promo_text.slided').slideToggle();
 	})
 })
