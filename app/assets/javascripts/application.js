@@ -20,9 +20,9 @@ $(function() {
 
 	$('#map').contactMap();
 
-	$('#our_mission_arrow').on('click', function(e) {
+	$('#our_mission_arrow, .services_menu_item').on('click', function(e) {
 		e.preventDefault();
-		$('.our_mission').slideToggle();
+		$('#service_toggle').slideToggle();
 	});
 
 	$('#page_up').on('click', function(e) {
@@ -35,4 +35,19 @@ $(function() {
 		$('.promo_text.mandatory .promo_fade').fadeToggle();
 		$('.promo_text.slided').slideToggle();
 	})
+
+	$('.icons_menu .clear:first a:last').addClass('last');
+
+	$('.hoverable').on('mouseover', function () {
+		$(this).addClass('hover');
+	});
+	$('.hoverable').on('mouseout', function () {
+		$(this).removeClass('hover');
+	})
+
+	$('.contact_us, .contact_us_close').on('click', function (e) {
+		e.preventDefault();
+		$('.contact_us').toggleClass('active');
+		$('.contact_us_popup').fadeToggle();
+	});
 })

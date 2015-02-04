@@ -1,6 +1,6 @@
 script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 
-.container.our_mission
+.container.our_mission#service_toggle
 	.compas_cont
 		.compas
 	h2 Наша миссия
@@ -11,6 +11,22 @@ script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 		br
 		| где закон не препятствие, а инструмент для реализации самых смелых проектов.
 	a.our_mission_arrow#our_mission_arrow href='#'
+.container.icons_menu
+	.shadow_top
+	.shadow_bottom
+	.wrapper
+		div.clear
+			a.main_icon.hoverable.main_icon_1 href='/' Безопасность бизнеса
+			a.main_icon.hoverable.main_icon_2 href='/' Бизнес консалтинг
+			a.main_icon.hoverable.main_icon_3 href='/' Налогове планирование
+			a.main_icon.hoverable.main_icon_4 href='/' Абонентское обслуживание
+			a.main_icon.hoverable.main_icon_5 href='/' Бухгалтерский и управленческий учет
+		div.clear.four_icons
+			a.main_icon.hoverable.main_icon_6 href='/' Договоры и делопроизводство
+			a.main_icon.hoverable.main_icon_7 href='/' Регистрация юридических лиц
+			a.main_icon.hoverable.main_icon_8 href='/' Ликвидация юридических лиц
+			a.main_icon.hoverable.main_icon_9 href='/' Регистрация товарных знаков
+
 .container.slides
 	.wrapper
 		.slider
@@ -18,7 +34,7 @@ script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 			.viewport
 				ul.overview
 					li
-						img src=image_path('slides/1.jpg')
+						img src=image_path('slides/1.png')
 					li
 						img src=image_path('slides/2.jpg')
 					li
@@ -28,7 +44,7 @@ script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 					li
 						img src=image_path('slides/5.jpg')
 			a.slider_right.next
-.container.our_partners
+.container.our_partners style='display:none'
 	.wrapper
 		h2 Наши партнеры
 		.slider
@@ -71,6 +87,6 @@ script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 				| Юристы «Белой карты» успешно оспаривают неправомерные решения органов власти, включая ФНС, ФАС и ФТС. Вне зависимости социально-политического контекста, эксперты «Белой карты» руководствуются принципом Цицерона: Законы изобретены для блага граждан.
 		a.read_more#read_more href='#' Подробнее
 .container.map
-	.map_shadow_top
-	.map_shadow_bottom
+	.shadow_top
+	.shadow_bottom
 	#map

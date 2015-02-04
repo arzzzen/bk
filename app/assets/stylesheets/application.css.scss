@@ -2,7 +2,6 @@
 @import 'variables.scss';
 @import 'defaults.scss';
 @import 'fonts.scss';
-@import 'tinycarousel.css';
 
 body {
 	color: $text_gray;
@@ -11,6 +10,18 @@ body {
 a {
 	text-decoration: none;
 	color: $text_gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font_roboto;
+	font-weight: 300;
+}
+
+.roboto {
+	@include font_roboto;
+}
+.ptsans {
+	@include font_ptsans;
 }
 
 .container {
@@ -26,11 +37,13 @@ a {
 	@include font_roboto;
 
 	.top_menu {
+		position: relative;
 		float: right;
 		padding-top: 37px;
 
-		a {
+		a.menu_i {
 			@include d_i;
+			z-index: 1;
 			font-size: 18px;
 			font-weight: 300;
 			padding-left: 30px;
@@ -46,18 +59,136 @@ a {
 			&.icon_menu:hover {
 				background-image: url(image_path('icon_menu_hover.png'));
 			}
-			&.connect_us {
+			&.contact_us {
 				font-size: 14px;
 				margin-left: 35px;
 				width: 135px;
 				line-height: 27px;
 				height: 27px;
-				background-image: url(image_path('contact_us.jpg'));
+				background-image: url(image_path('contact_us.png'));
 				background-repeat: no-repeat;
+				&:hover,
+				&.hover {
+					background-position: 0 -27px;
+				}
+				&.active {
+					background-position: 0 -54px;
+					color: #fff;
+				}
+			}
+		}
+		.contact_us_popup {
+			display: none;
+			@include font_ptsans;
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #cccccc;
+			border-radius: 14px;
+			top: 90px;
+			right: 0;
+			z-index: 2;
+			padding: 30px 42px 16px;
+			width: 179px;
+			font-size: 14px;
+			color: #3e3e3e;
+			h3 {
+				@include font_roboto;
+				font-size: 18px;
+				font-weight: 300;
+				margin: 0;
+				color: #7a7a7a;
+			}
+			a {
+				color: #225f86;
+				border-bottom: 1px dashed;
+				&:hover {
+					border-bottom: none;
+				}
+			}
+			.contact_us_close {
+				@include d_i;
+				position: absolute;
+				background-image: url(image_path('contact_us_close.png'));
+				width: 14px;
+				height: 14px;
+				top: 28px;
+				right: 28px;
+				cursor: pointer;
+			}
+			.contact_us_arrow {
+				position: absolute;
+				background-image: url(image_path('contact_us_arrow.png'));
+				width: 30px;
+				height: 16px;
+				top: -16px;
+				right: 57px;
 			}
 		}
 	}
 }
+.icons_menu {
+	position: relative;
+	background-image: url(image_path('icons_bkg.png'));
+	background-repeat: repeat;
+	height: 490px;
+	.wrapper {
+		padding-top: 8px;
+	}
+	a {
+		@include d_i;
+		@include font_roboto;
+		width: 140px;
+		padding-top: 165px;
+		float: left;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 300;
+		color: #3e3e3e;
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.last {
+			margin-right: 0;
+		}
+	}
+	.clear {
+		padding-top: 30px;
+		&.four_icons {
+			padding-left: 92px;
+		}
+	}
+}
+.main_icon {
+	background-repeat: no-repeat;
+}
+.main_icon_1 {background-image: url(image_path('icons/1.png'));}
+.main_icon_1.hover,
+.main_icon_1:hover {background-image: url(image_path('icons/1_active.png'));}
+.main_icon_2 {background-image: url(image_path('icons/2.png'));}
+.main_icon_2.hover,
+.main_icon_2:hover {background-image: url(image_path('icons/2_active.png'));}
+.main_icon_3 {background-image: url(image_path('icons/3.png'));}
+.main_icon_3.hover,
+.main_icon_3:hover {background-image: url(image_path('icons/3_active.png'));}
+.main_icon_4 {background-image: url(image_path('icons/4.png'));}
+.main_icon_4.hover,
+.main_icon_4:hover {background-image: url(image_path('icons/4_active.png'));}
+.main_icon_5 {background-image: url(image_path('icons/5.png'));}
+.main_icon_5.hover,
+.main_icon_5:hover {background-image: url(image_path('icons/5_active.png'));}
+.main_icon_6 {background-image: url(image_path('icons/6.png'));}
+.main_icon_6.hover,
+.main_icon_6:hover {background-image: url(image_path('icons/6_active.png'));}
+.main_icon_7 {background-image: url(image_path('icons/7.png'));}
+.main_icon_7.hover,
+.main_icon_7:hover {background-image: url(image_path('icons/7_active.png'));}
+.main_icon_8 {background-image: url(image_path('icons/8.png'));}
+.main_icon_8.hover,
+.main_icon_8:hover {background-image: url(image_path('icons/8_active.png'));}
+.main_icon_9 {background-image: url(image_path('icons/9.png'));}
+.main_icon_9.hover,
+.main_icon_9:hover {background-image: url(image_path('icons/9_active.png'));}
 .our_mission {
 	@extend .clearfix;
 	position: relative;
@@ -65,6 +196,7 @@ a {
 	text-align: center;
 	background-image: url(image_path('our_mission.jpg'));
 	background-repeat: repeat-x;
+	height: 175px;
 	h2 {
 		@include font_roboto;
 		margin: 34px 0 30px;
@@ -229,25 +361,25 @@ a {
 }
 .map {
 	position: relative;
-	.map_shadow_top,
-	.map_shadow_bottom {
-		position: absolute;
-		height: 18px;
-		width: 100%;
-		left: 0;
-		z-index: 1;
-	}
-	.map_shadow_top {
-		background-image: url(image_path('map_shadow_top.png'));
-		top: 0;
-	}
-	.map_shadow_bottom {
-		background-image: url(image_path('map_shadow_bottom.png'));
-		bottom: 0;
-	}
 	#map {
 		height: 400px;
 	}
+}
+.shadow_top,
+.shadow_bottom {
+	position: absolute;
+	height: 18px;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+}
+.shadow_top {
+	background-image: url(image_path('map_shadow_top.png'));
+	top: 0;
+}
+.shadow_bottom {
+	background-image: url(image_path('map_shadow_bottom.png'));
+	bottom: 0;
 }
 .footer {
 	@extend .clearfix;
@@ -255,6 +387,7 @@ a {
 	padding: 28px 0 25px;
 	border-bottom: none;
 	color: #888888;
+	font-size: 14px;
 	.wrapper {
 		position: relative;
 	}
@@ -267,12 +400,12 @@ a {
 		height: 57px;
 	}
 	.copy {
-		padding-top: 5px;
+		padding-top: 8px;
 		float: left;
 		padding-left: 30px;
 	}
 	.site_dev {
-		padding-top: 5px;
+		padding-top: 8px;
 		float: right;
 		text-align: right;
 	}
@@ -286,5 +419,168 @@ a {
 		margin-top: 5px;
 		right: -93px;
 		cursor: pointer;
+	}
+}
+
+// inner
+.page_title {
+	background-image: url(image_path('page_title.png'));
+	background-repeat: repeat-x;
+	background-position: top left;
+	.wrapper {
+		position: relative;
+	}
+	.title_icon {
+		position: absolute;
+		img {
+			@include d_i;
+			width: 62px;
+			height: 68px;
+			// position: absolute;
+			padding: 19px 22px;
+		}
+	}
+	h1 {
+		@include font_roboto;
+		margin: 0;
+		font-size: 30px;
+		font-weight: 300;
+		height: 107px;
+		line-height: 107px;
+		padding-left: 120px;
+	}
+}
+.page_content {
+	@extend .clearfix;
+	@include font_ptsans;
+	padding: 80px 0;
+
+	.mainbar {
+		width: 540px;
+		float: left;
+		color: #3e3e3e;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #949494;
+		}
+		p:first-child {
+			margin-top: 0;
+		}
+	}
+	.sidebar {
+		width: 258px;
+		float: right;
+		text-align: right;
+
+		.person_desc {
+			font-size: 16px;
+			color: #3e3e3e;
+			margin-bottom: 30px;
+			.last_name {
+				@include d_i;
+				padding-top: 22px;
+				font-size: 20px;
+			}
+			.muted {
+				@include d_i;
+				padding-top: 9px;
+				color: #949494;
+			}
+		}
+		.banner {
+			@include d_i;
+			margin-top: 40px;
+			width: 178px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.testimonials {
+	padding: 50px 0;
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+		color: #3e3e3e;
+		margin: 0;
+	}
+	.testimonial {
+		@extend .clearfix;
+		position: relative;
+		margin: 50px 0;
+		height: 358px;
+		background-image: url(image_path('testimonial.png'));
+		background-repeat: no-repeat;
+		border: 1px solid #cccccc;
+
+		.person {
+			float: left;
+			padding-top: 70px;
+			width: 314px;
+			text-align: center;
+			.pic {
+				height: 125px;
+			}
+			.name {
+				@include font_serif;
+				font-size: 24px;
+				color: #3e3e3e;
+				margin-top: 25px;
+			}
+			.desc {
+				@include font_ptsans;
+				font-size: 16px;
+				color: #9b9b9b;
+				margin-top: 10px;
+			}
+		}
+		.comment {
+			@include font_ptsans;
+			position: relative;
+			float: right;
+			width: 414px;
+			font-size: 14px;
+			color: #787878;
+			padding: 70px 65px;
+			line-height: 27px;
+			.quote_open,
+			.quote_close {
+				@include font_serif;
+				position: absolute;
+				font-size: 72px;
+				color: #e0e0e0;
+			}
+			.quote_open {
+				left: 20px;
+			}
+			.quote_close {
+				right: 47px;
+				bottom: 68px;
+			}
+		}
+		.testimonial_shadow {
+			position: absolute;
+			background-image: url(image_path('testimonial_shadow.png'));
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 16px;
+			bottom: -16px;
+			left: 0;
+		}
+		.testimonial_rotated {
+			position: absolute;
+			background-image: url(image_path('testimonial_rotated.png'));
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 358px;
+		}
+	}
+	.testimonials_more {
+		@include d_i;
+		background-image: url(image_path('testimonials_more.png'));
+		cursor: pointer;
+		width: 54px;
+		height: 54px;
 	}
 }

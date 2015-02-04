@@ -8,6 +8,9 @@ $text_gray: #8c8c8c;
 @mixin font_ptsans {
 	font-family: 'PT Sans', sans-serif;
 }
+@mixin font_serif {
+	font-family: 'PT Serif', serif;
+}
 @mixin d_i {
 	display: inline-block;
 	//display : inline;

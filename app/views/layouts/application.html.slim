@@ -14,11 +14,30 @@ html
 		.container
 			.wrapper.header
 				.top_menu
-					a.icon_menu href="#"
+					a.services_menu_item.menu_i.icon_menu href="#"
 						| Услуги
-					a href="#" О компании
-					a href="#" Отзывы
-					a.connect_us href="#" Связаться с нами
+					a.menu_i href="/inner" О компании
+					a.menu_i href="/testimonials" Отзывы
+					a.menu_i.hoverable.contact_us href="#" Связаться с нами
+					.contact_us_popup
+						.contact_us_arrow
+						.contact_us_close
+						h3 Телефон
+						p 
+							| (812) 648 02 67
+							br
+							a href='#' Заказать звонок
+						h3 Адрес
+						p
+							| 191015, Санкт-Петербург,
+							br
+							| Шпалерная ул. , 51, офис 561
+						p
+							| Юридический адрес: 
+							br
+							| 191167, Санкт-Петербург,
+							br
+							| ул. Атаманская, 3/6, литера Б
 				a.logo href='/'
 					img src=image_path('logo.png')
 
