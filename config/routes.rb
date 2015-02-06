@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'page/:id' => 'pages#page'
   get 'inner' => 'pages#inner'
   get 'testimonials' => 'pages#testimonials'
   get 'about' => 'pages#about'
