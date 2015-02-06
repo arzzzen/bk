@@ -16,7 +16,7 @@ $.fn.contactMap = function() {
 
                 		myPlacemark = new ymaps.Placemark(addrCoords, {}, {
                 			iconLayout: 'default#image',
-                			iconImageHref: '/ymap_placem.png',
+                			iconImageHref: '/assets/ymap_placem.png',
                 	        iconImageSize: [46, 51],
                 	        iconImageOffset: [-23, -51]
                 		});
