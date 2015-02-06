@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-Bkds::Application.config.secret_key_base = secure_token
+Bk::Application.config.secret_key_base = secure_token
