@@ -1,5 +1,3 @@
-script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
-
 .container.our_mission#service_toggle
 	.compas_cont
 		.compas
@@ -34,15 +32,15 @@ script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
 			.viewport
 				ul.overview
 					li
-						img src=image_path('slides/1.png')
-					li
 						img src=image_path('slides/2.jpg')
 					li
-						img src=image_path('slides/3.jpg')
+						img#timer_images src=image_path('slides/3_1.jpg') data-indx=1 data-img1=image_path('slides/3_1.jpg') data-img2=image_path('slides/3_2.jpg') data-img3=image_path('slides/3_3.jpg') data-img4=image_path('slides/3_4.jpg')
 					li
 						img src=image_path('slides/4.jpg')
 					li
 						img src=image_path('slides/5.jpg')
+					li
+						img src=image_path('slides/1.png')
 			a.slider_right.next
 .container.our_partners style='display:none'
 	.wrapper

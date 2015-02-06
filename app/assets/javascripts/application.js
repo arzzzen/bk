@@ -33,7 +33,16 @@ $(function() {
 	$('#read_more').on('click', function(e) {
 		e.preventDefault();
 		$('.promo_text.mandatory .promo_fade').fadeToggle();
-		$('.promo_text.slided').slideToggle();
+		$('.promo_text.slided')
+			.slideToggle()
+			.promise()
+			.done(function () {
+				if ($('.promo_text.slided').is(':visible')) {
+					$('#read_more').html('Свернуть');
+				} else {
+					$('#read_more').html('Подробнее');
+				}
+			});
 	})
 
 	$('.icons_menu .clear:first a:last').addClass('last');
@@ -50,4 +59,22 @@ $(function() {
 		$('.contact_us').toggleClass('active');
 		$('.contact_us_popup').fadeToggle();
 	});
+
+	if ($('#timer_images').length) {
+		setInterval(function() {
+			var $e = $('#timer_images');
+			$e
+				.animate({opacity: 0}, 2000)
+				.promise()
+				.done(function () {
+					$e.attr('src', $e.data('img'+$e.data('indx')));
+					if ($e.data('indx') < 4) {
+						$e.data('indx', $e.data('indx') + 1);
+					} else {
+						$e.data('indx', 1);
+					}
+					$e.css('opacity', 1);
+				})
+		}, 3000);
+	}
 })

@@ -2,8 +2,8 @@ doctype strict
 html
 	head
 		title Bk
-  		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+  		= stylesheet_link_tag    'application', media: 'all'
+		= javascript_include_tag 'application'
 		= csrf_meta_tags
 		/[if lt IE 9]
 			= javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
@@ -16,7 +16,7 @@ html
 				.top_menu
 					a.services_menu_item.menu_i.icon_menu href="#"
 						| Услуги
-					a.menu_i href="/inner" О компании
+					a.menu_i href="/about" О компании
 					a.menu_i href="/testimonials" Отзывы
 					a.menu_i.hoverable.contact_us href="#" Связаться с нами
 					.contact_us_popup

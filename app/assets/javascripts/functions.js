@@ -4,21 +4,25 @@ $.fn.contactMap = function() {
     	,$map = $('#map');
 	return $(this).each(function() {
         if (typeof document.body.style.maxHeight != "undefined") {
-        	ymaps.ready(function() {
-                var contMap = new ymaps.Map($map.attr('id'), {
-        	            center: addrCoords,
-        	            zoom: zoom,
-        	            controls: []
-        	        });
+            $.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU')
+                .done(function () {
+                	ymaps.ready(function() {
+                        var contMap = new ymaps.Map($map.attr('id'), {
+                	            center: addrCoords,
+                	            zoom: zoom,
+                	            controls: ['zoomControl']
+                	        });
+                        contMap.behaviors.disable('scrollZoom');
 
-        		myPlacemark = new ymaps.Placemark(addrCoords, {}, {
-        			iconLayout: 'default#image',
-        			iconImageHref: '/ymap_placem.png',
-        	        iconImageSize: [46, 51],
-        	        iconImageOffset: [-23, -51]
-        		});
-                contMap.geoObjects.add(myPlacemark);
-        	});
+                		myPlacemark = new ymaps.Placemark(addrCoords, {}, {
+                			iconLayout: 'default#image',
+                			iconImageHref: '/ymap_placem.png',
+                	        iconImageSize: [46, 51],
+                	        iconImageOffset: [-23, -51]
+                		});
+                        contMap.geoObjects.add(myPlacemark);
+                	});
+                })
         } else {
         	// IE6, older browsers
         	addrCoords.reverse();
