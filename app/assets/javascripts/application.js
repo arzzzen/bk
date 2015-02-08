@@ -19,6 +19,12 @@ $(function() {
 
 	$('#map').contactMap();
 
+	$('#request_call').on('click', function(e) {
+		e.preventDefault();
+		$('.contact_us').trigger('click');
+		modal($('.request_call')).open();
+	})
+
 	$('#our_mission_arrow, .services_menu_item').on('click', function(e) {
 		e.preventDefault();
 		$('#service_toggle').slideToggle();
@@ -62,8 +68,7 @@ $(function() {
 	if ($('#timer_images').length) {
 		setInterval(function() {
 			var $e = $('#timer_images');
-			$e
-				.animate({opacity: 0}, 2000)
+			$e.animate({opacity: 0}, 2000)
 				.promise()
 				.done(function () {
 					$e.attr('src', $e.data('img'+$e.data('indx')));
@@ -76,4 +81,24 @@ $(function() {
 				})
 		}, 3000);
 	}
+
+	$('#testimonials_more').on('click', function(e) {
+		e.preventDefault();
+		var $that = $(this),
+			count = 0,
+			fn = function() {
+				if (count > 4) {
+					clearInterval(interval);
+					$('.testimonial').removeClass('last');
+					$('#additional_testimonials .testimonial:last').addClass('.last');
+					$('#additional_testimonials').removeClass('hidden');
+					$that.remove();
+				} else {
+					$that.stop().animate({opacity: count % 2 ? 0 : 1}, 500);
+					count++;
+				}
+			},
+			interval = setInterval(fn, 500);
+		fn();
+	});
 })

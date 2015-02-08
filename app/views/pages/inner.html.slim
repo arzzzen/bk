@@ -68,17 +68,27 @@
 			/ h2 Консалтинговая группа
 		.sidebar
 			.person_desc
-				img src=image_path('boss.png')
+				img src=image_path(@sidebar_img)
 				br
-				span.last_name Баландин
-				br
-				| Денис
-				br
-				| Георгиевич
-				br
-				span.muted Опыт работы: 12 лет
+				= @sidebar_desc.html_safe
+			.border
+			.help_form
+				h2 Нужна помощь?
+				form
+					label
+						| Ваше имя:
+						input type='text'
+					label
+						| Телефон
+						span.required *
+						| :
+						input type='text'
+					label
+						| E-mail:
+						input type='text'
+					label
+						| Кортко о вашем деле:
+						textarea
+					.field_wrap.text_right
+						input.submit type='submit' value='Отправить'
 
-			a.banner
-				img style='height: 300px; background-color: gray'
-			a.banner
-				img style='height: 300px; background-color: gray'

@@ -2,6 +2,7 @@ doctype strict
 html
 	head
 		title Bk
+		meta name="viewport" content="width=960, initial-scale=1"
   		= stylesheet_link_tag    'application', media: 'all'
 		= javascript_include_tag 'application'
 		= csrf_meta_tags
@@ -11,6 +12,27 @@ html
 			= stylesheet_link_tag "ie6", :media => "all"
 			= javascript_include_tag "iepngfix_tilebg.js"
 	body
+		.request_call.hidden
+			h1 Заказ звонка
+			form
+				.first_column
+					label
+						| Ваше имя:
+						input type='text'
+					label
+						| Телефон
+						span.required *
+						| :
+						input type='text'
+					label
+						| E-mail:
+						input type='text'
+				.textarea_column
+					label
+						| Кортко о вашем деле:
+						textarea
+				.field_wrap
+					input.submit type='submit' value='Отправить'
 		.container
 			.wrapper.header
 				.top_menu
@@ -21,25 +43,17 @@ html
 					a.menu_i.hoverable.contact_us href="#" Связаться с нами
 					.contact_us_popup
 						.contact_us_arrow
-						.contact_us_close
 						h3 Телефон
 						p 
 							| (812) 648 02 67
 							br
-							a href='#' Заказать звонок
+							a#request_call href='#' Заказать звонок
 						h3 Адрес
 						p
 							| 191015, Санкт-Петербург,
 							br
 							| Шпалерная ул. , 51, офис 561
-						p
-							| Юридический адрес: 
-							br
-							| 191167, Санкт-Петербург,
-							br
-							| ул. Атаманская, 3/6, литера Б
 				a.logo href='/'
-					img src=image_path('logo.png')
 
 		= yield
 		.container.footer

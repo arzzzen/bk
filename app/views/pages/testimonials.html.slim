@@ -3,16 +3,16 @@
 	.shadow_bottom
 	.wrapper
 		div.clear
-			a.main_icon.hoverable.main_icon_1 href='/' Безопасность бизнеса
-			a.main_icon.hoverable.main_icon_2 href='/' Бизнес консалтинг
-			a.main_icon.hoverable.main_icon_3 href='/' Налогове планирование
-			a.main_icon.hoverable.main_icon_4 href='/' Абонентское обслуживание
-			a.main_icon.hoverable.main_icon_5 href='/' Бухгалтерский и управленческий учет
+			a.main_icon.hoverable.main_icon_1 href='/page/1' Безопасность бизнеса
+			a.main_icon.hoverable.main_icon_2 href='/page/2' Бизнес консалтинг
+			a.main_icon.hoverable.main_icon_3 href='/page/3' Налогове планирование
+			a.main_icon.hoverable.main_icon_4 href='/page/4' Абонентское обслуживание
+			a.main_icon.hoverable.main_icon_5 href='/page/5' Бухгалтерский и управленческий учет
 		div.clear.four_icons
-			a.main_icon.hoverable.main_icon_6 href='/' Договоры и делопроизводство
-			a.main_icon.hoverable.main_icon_7 href='/' Регистрация юридических лиц
-			a.main_icon.hoverable.main_icon_8 href='/' Ликвидация юридических лиц
-			a.main_icon.hoverable.main_icon_9 href='/' Регистрация товарных знаков
+			a.main_icon.hoverable.main_icon_6 href='/page/6' Договоры и делопроизводство
+			a.main_icon.hoverable.main_icon_7 href='/page/7' Регистрация юридических лиц
+			a.main_icon.hoverable.main_icon_8 href='/page/8' Ликвидация юридических лиц
+			a.main_icon.hoverable.main_icon_9 href='/page/9' Регистрация товарных знаков
 .container.testimonials
 	.wrapper
 		h1 Отзывы наших клиентов
@@ -64,5 +64,53 @@
 				.quote_close &#8222;
 			.testimonial_shadow
 
+		#additional_testimonials.hidden
+			.clear
+			.testimonial
+				.person
+					.pic
+						img src=image_path('clients/elena.png')
+					.name Елена
+					.desc
+						| ИП,
+						br
+						| г. Клин
+
+				.comment
+					.quote_open &#8220;
+					| Я заказала аудит всего документооборота у компании «Белая карта», т.к. мне предстояло выдержать проверку налоговой инспекции. Юристы компании сработали на удивление очень быстро - буквально за 2 дня всё проверили, после чего представили письменное заключение, указали на недочёты в документах моей организации и подробно объяснили, как их можно устранить. специальсты компании «Белая карта» сработыли оперативно и профессионально! Огромное спасибо!
+					.quote_close &#8222;
+				.testimonial_shadow
+			.clear
+			.testimonial
+				.person
+					.pic
+						img src=image_path('clients/vika.png')
+					.name Виктория
+					.desc
+						| ИП,
+						br
+						| г. Москва
+
+				.comment
+					.quote_open &#8220;
+					| Я уже год пользуюсь услугами юриста компании «Белая карта». Он то и помог мне зарегистрировать юридическое лицо, детально проработать всю договорную базу, причем с учетом специфики моей деятельности (занимаюсь созданием и раскруткой сайтов). Считаю, что мне очень повезло - за этот год ни разу не возникло никаких проблем с клиентами в части документооборота. Я в любой момент могла проконсультироваться по телефону или электронной почте тут же получить ответ.
+					.quote_close &#8222;
+				.testimonial_shadow
+			.clear
+			.testimonial.last
+				.person
+					.pic
+						img src=image_path('clients/yar.png')
+					.name Ярослав
+					.desc
+						| г. Самара
+
+				.comment
+					.quote_open &#8220;
+					| В компании «Белая карта» работают настоящие профессионалы! Я убедился в этом на личном опыте. С их помощью смог выстро и без всяких проблем ликвидировать фирму, которую так и не удалось раскрутить, и открыл новую. Купил пакет «Успешный бизнес» и теперь все свое время трачу на развитие нового бизнеса, а документацией занимается уже проверенный и опытный юрист из «Белой карты». На этапе стартапа это надежнее и дешевле, чем искать специалиста в офис.
+					.quote_close &#8222;
+				.testimonial_shadow
+
 		.text_center
-			span.testimonials_more
+			span.testimonials_more#testimonials_more

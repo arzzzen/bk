@@ -29,6 +29,91 @@ h3 {
 	font-size: 18px;
 }
 
+form {
+	@include font_ptsans;
+	label,
+	.field_wrap {
+		clear: both;
+		font-size: 14px;
+		line-height: 30px;
+		display: block;
+		padding-top: 25px;
+		textarea,
+		input[type=text] {
+			width: 173px;
+			padding: 0 11px;
+			color: #3e3e3e;
+		}
+		.required {
+			color: #f99374;
+		}
+		input {
+			height: 26px;
+		}
+		textarea {
+			display: block;
+			resize: none;
+			height: 152px;
+		}
+		.submit {
+			color: #2f2e2d;
+			border: 1px solid #2f2e2d;
+			background-color: #fff;
+			padding: 0 30px;
+		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	zoom: 1;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	.modal {
+		display: inline-block;
+		position: absolute;
+		background-color: #fff;
+		-webkit-box-shadow: 0px 23px 22px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 23px 22px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 23px 22px 0px rgba(50, 50, 50, 0.75);
+	}
+}
+
+.request_call {
+	width: 512px;
+	height: 350px;
+	padding: 50px 90px;
+	text-align: left;
+	h1 {
+		margin: 0;
+		line-height: 30px;
+	}
+	label {
+		padding-top: 20px;
+	}
+	.field_wrap {
+		padding-top: 35px;
+	}
+	.first_column {
+		float: left;
+		width: 200px;
+	}
+	.textarea_column {
+		float: right;
+		width: 267px;
+		textarea {
+			width: 242px;
+			height: 188px;
+		}
+	}
+}
+
 .roboto {
 	@include font_roboto;
 }
@@ -37,6 +122,7 @@ h3 {
 }
 
 .container {
+	width: 100%;
 	border-bottom: 1px solid $container_border;
 }
 .wrapper {
@@ -72,20 +158,16 @@ h3 {
 				background-image: url(image_path('icon_menu_hover.png'));
 			}
 			&.contact_us {
+				padding: 0 16px;
+				border-radius: 13.5px;
 				font-size: 14px;
 				margin-left: 35px;
-				width: 135px;
 				line-height: 27px;
 				height: 27px;
-				background-image: url(image_path('contact_us.png'));
-				background-repeat: no-repeat;
-				&:hover,
-				&.hover {
-					background-position: 0 -27px;
-				}
+				border: 1px solid #8c8c8c;
 				&.active {
-					background-position: 0 -54px;
-					color: #fff;
+					border-color: #191919;
+					color: #191919;
 				}
 			}
 		}
@@ -100,7 +182,7 @@ h3 {
 			right: 0;
 			z-index: 2;
 			padding: 30px 42px 16px;
-			width: 179px;
+			width: 181px;
 			font-size: 14px;
 			color: #3e3e3e;
 			h3 {
@@ -113,7 +195,8 @@ h3 {
 			a {
 				color: #225f86;
 				border-bottom: 1px dashed;
-				&:hover {
+				&:hover,
+				&.hover {
 					border-bottom: none;
 				}
 			}
@@ -136,6 +219,12 @@ h3 {
 				right: 57px;
 			}
 		}
+	}
+	.logo {
+		@include d_i;
+		@include at2x('logo', 'png', 128px, 104px);
+		width: 128px;
+		height: 104px;
 	}
 }
 .icons_menu {
@@ -220,17 +309,18 @@ h3 {
 		font-size: 16px;
 		color: #3e3e3e;
 	}
-	.compas_cont {
-		width: 1330px;
-		margin: 0 auto;
+	.wrapper {
 		position: relative;
-		.compas {
-			position: absolute;
-			width: 535px;
-			height: 230px;
-			top: 0;
+	}
+	.compas {
+		position: absolute;
+		width: 326px;
+		height: 210px;
+		top: -14px;
+		right: -110px;
+		background-image: url(image_path('compas.png'));
+		@media (max-width: 1056px) {
 			right: 0;
-			background-image: url(image_path('compas.png'));
 		}
 	}
 	.our_mission_arrow {
@@ -322,9 +412,13 @@ h3 {
 			background-image: url(image_path('slider_partners_right.png'));
 		}
 		.viewport {
-			height: 70px;
+			height: 75px;
 			li {
-				padding-left: 28px;
+				@include d_i;
+				float: none;
+				vertical-align: middle;
+				width: 160px;
+				padding-left: 12px;
 			}
 		}
 	}
@@ -431,6 +525,9 @@ h3 {
 		margin-top: 5px;
 		right: -93px;
 		cursor: pointer;
+		@media (max-width: 1056px) {
+			right: -50px;
+		}
 	}
 }
 
@@ -472,6 +569,8 @@ h3 {
 		width: 540px;
 		float: left;
 		color: #3e3e3e;
+		padding-right: 61px;
+		border-right: 1px solid #dadada;
 
 		h1, h2, h3, h4, h5, h6 {
 			color: #949494;
@@ -484,11 +583,13 @@ h3 {
 		width: 258px;
 		float: right;
 		text-align: right;
+		border-left: 1px solid #dadada;
+		margin-left: -1px;
 
 		.person_desc {
 			font-size: 16px;
 			color: #3e3e3e;
-			margin-bottom: 30px;
+			margin-bottom: 38px;
 			.last_name {
 				@include d_i;
 				padding-top: 22px;
@@ -500,12 +601,22 @@ h3 {
 				color: #949494;
 			}
 		}
-		.banner {
-			@include d_i;
-			margin-top: 40px;
-			width: 178px;
-			img {
-				width: 100%;
+		.border {
+			width: 308px;
+			height: 1px;
+			background-color: #dadada;
+		}
+		.help_form {
+			width: 200px;
+			float: right;
+			padding-top: 53px;
+			text-align: left;
+			color: #949494;
+			h2 {
+				margin: 0;
+				line-height: 20px;
+				font-size: 20px;
+				color: #949494;
 			}
 		}
 	}

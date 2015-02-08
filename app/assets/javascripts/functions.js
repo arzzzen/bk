@@ -33,3 +33,67 @@ $.fn.contactMap = function() {
         }
 	})
 }
+
+// Можно html или html
+function modal(content) {
+    if (content instanceof jQuery) {
+        content = content.clone().show().wrap('<div></div>').parent().html();
+    }
+    var  modal = {
+            $modal: $('<div class="overlay"><div class="modal"></div></div>')
+            ,open: function() {
+                this.$modal.on('click', function(e) {
+                    if (e.target === this) {
+                        modal.close();
+                    }
+                })
+                $('body').append(this.$modal);
+                $(window).on('resize.modal', function() {
+                    modal.onCenter.call(modal);
+                });
+                this.onCenter();
+            }
+            ,close: function() {
+                $(window).off('resize.modal');
+                this.$modal.remove();
+            }
+            ,onCenter: function() {
+                var $modal = $('.modal', this.$modal),
+                    wh = $(window).height() / 2,
+                    ww = $(window).width() / 2,
+                    modal_params = this.getHiddenDivParams($modal),
+                    top = wh - modal_params.height / 2,
+                    left = ww - modal_params.width / 2;
+                $modal.css({
+                    top: top > 0 ? top : 0,
+                    left: left > 0 ? left : 0
+                });
+            }
+            ,getHiddenDivParams: function($div) {
+                var oldStyle = $div.attr('style');
+                $div.css({
+                    position: 'absolute',
+                    visibility: 'hidden',
+                    display: 'block'
+                });
+                var params = {
+                    height: $div.outerHeight() + this.cssSize($div.css('margin-top')) + this.cssSize($div.css('margin-bottom')),
+                    width: $div.outerWidth()
+                }
+                $div.attr('style', oldStyle ? oldStyle : '');
+                return params;
+            }
+            ,cssSize: function(css) {
+                return parseInt(css ? css.replace("px", "") : 0);
+            }
+        };
+    modal.
+        $modal
+        .find('.modal')
+        .html(content);
+
+    $('.overlay', modal.$modal).on('click', function() {
+        modal.close();
+    })
+    return modal;
+}
