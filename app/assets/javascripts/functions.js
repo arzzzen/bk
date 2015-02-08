@@ -21,6 +21,10 @@ $.fn.contactMap = function() {
                 	        iconImageOffset: [-23, -51]
                 		});
                         contMap.geoObjects.add(myPlacemark);
+                        myPlacemark.events.add('click', function (placemark) {
+                            $(window).scrollTop(0)
+                            modal($('.request_call')).open();
+                        });
                 	});
                 })
         } else {
