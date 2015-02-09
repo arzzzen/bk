@@ -537,6 +537,7 @@ form {
 	background-image: url(image_path('page_title.png'));
 	background-repeat: repeat-x;
 	background-position: top left;
+	color: #3e3e3e;
 	.wrapper {
 		position: relative;
 	}
@@ -558,6 +559,16 @@ form {
 		height: 107px;
 		line-height: 107px;
 		padding-left: 120px;
+	}
+	.path {
+		position: absolute;
+		background-image: url(image_path('path.png'));
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 173px;
+		height: 107px;
+		left: -62.5px;
+		top: 0;
 	}
 }
 .page_content {

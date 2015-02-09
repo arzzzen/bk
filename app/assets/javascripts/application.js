@@ -28,6 +28,7 @@ $(function() {
 	$('#our_mission_arrow, .services_menu_item').on('click', function(e) {
 		e.preventDefault();
 		$('#service_toggle').slideToggle();
+		$('.page_title').slideToggle();
 	});
 
 	$('#page_up').on('click', function(e) {
@@ -87,7 +88,7 @@ $(function() {
 		var $that = $(this),
 			count = 0,
 			fn = function() {
-				if (count > 4) {
+				if (count > 2) {
 					clearInterval(interval);
 					$('.testimonial').removeClass('last');
 					$('#additional_testimonials .testimonial:last').addClass('.last');
