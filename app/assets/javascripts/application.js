@@ -68,18 +68,37 @@ $(function() {
 
 	if ($('#timer_images').length) {
 		setInterval(function() {
-			var $e = $('#timer_images');
-			$e.animate({opacity: 0}, 2000)
+			var $e = $('#timer_images img')
+				,moveA
+				,fadeA
+				;
+			$e.css({
+				'opacity': 0,
+				'top': '-400px'
+			});
+
+
+			$e.attr('src', $e.data('img'+$e.data('indx')));
+			if ($e.data('indx') < 4) {
+				$e.data('indx', $e.data('indx') + 1);
+			} else {
+				$e.data('indx', 1);
+			}
+
+			moveA = $e
+				.animate(
+					{top: 0, opacity: 1},
+					{
+						duration: 1000,
+						specialEasing: {
+							opacity: "linear",
+							top: "easeInOutBack"
+						}
+					}
+				)
 				.promise()
 				.done(function () {
-					$e.attr('src', $e.data('img'+$e.data('indx')));
-					if ($e.data('indx') < 4) {
-						$e.data('indx', $e.data('indx') + 1);
-					} else {
-						$e.data('indx', 1);
-					}
-					$e.css('opacity', 1);
-				})
+				});
 		}, 3000);
 	}
 

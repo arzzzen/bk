@@ -296,7 +296,7 @@ form {
 	padding-bottom: 55px;
 	text-align: center;
 	background-image: url(image_path('our_mission.jpg'));
-	background-repeat: repeat-x;
+	background-repeat: repeat;
 	height: 175px;
 	h2 {
 		@include font_roboto;
@@ -385,6 +385,14 @@ form {
 			height: 360px;
 			li {
 				width: 286.7px;
+				&#timer_images {
+					position: relative;
+					height: 360px;
+					img {
+						position: absolute;
+						left: 8px;
+					}
+				}
 			}
 		}
 	}
