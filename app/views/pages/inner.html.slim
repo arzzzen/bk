@@ -17,6 +17,7 @@
 	.shadow_top
 	.shadow_bottom
 	.wrapper
+		.path
 		div.title_icon
 			img src=image_path("icons/#{@id}_active.png")
 		h1= @title
@@ -77,17 +78,21 @@
 				form
 					label
 						| Ваше имя:
+						br
 						input type='text'
 					label
 						| Телефон
 						span.required *
 						| :
+						br
 						input type='text'
 					label
 						| E-mail:
+						br
 						input type='text'
 					label
 						| Коротко о вашем деле:
+						br
 						textarea
 					.field_wrap.text_right
 						input.submit type='submit' value='Отправить'

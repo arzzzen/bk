@@ -7,17 +7,6 @@ img, div, a {
 			&.icon_menu {
 				background-position: 24px 6px;
 			}
-			&.contact_us {
-				background-position: 35px 0;
-				background-image: none;
-				&:hover
-				&.hover {
-					// background-image: url(image_path('contact_us_hover.png'));
-				}
-				&.active {
-					// background-image: url(image_path('contact_us_active.png'));
-				}
-			}
 		}
 		.contact_us_popup {
 			z-index: 3;
