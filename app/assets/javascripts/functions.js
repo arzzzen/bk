@@ -18,13 +18,14 @@ $.fn.contactMap = function() {
                 			iconLayout: 'default#image',
                 			iconImageHref: '/assets/ymap_placem.png',
                 	        iconImageSize: [46, 51],
-                	        iconImageOffset: [-23, -51]
+                	        iconImageOffset: [-23, -51],
+                            balloonContent: '<h3>Телефон</h3><p>(812) 648 02 67<br><a href="#" id="request_call">Заказать звонок</a></p><h3>Адрес</h3><p>191015, Санкт-Петербург,<br>Шпалерная ул. , 51, офис 561</p>'
                 		});
                         contMap.geoObjects.add(myPlacemark);
-                        myPlacemark.events.add('click', function (placemark) {
-                            $(window).scrollTop(0)
-                            modal($('.request_call')).open();
-                        });
+                        // myPlacemark.events.add('click', function (placemark) {
+                        //     $(window).scrollTop(0)
+                        //     modal($('.request_call')).open();
+                        // });
                 	});
                 })
         } else {
