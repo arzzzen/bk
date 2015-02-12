@@ -15,7 +15,11 @@
 //= require_tree .
 
 $(function() {
-	$('.slider').tinycarousel();
+	$('#slides1').tinycarousel();
+
+	$('.thslide').thslide({
+    	infiniteScroll: 1,
+	});
 
 	$('#map').contactMap();
 

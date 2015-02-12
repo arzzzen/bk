@@ -27,7 +27,7 @@
 
 .container.slides
 	.wrapper
-		.slider
+		.slider#slides1
 			a.slider_left.prev
 			.viewport
 				ul.overview
@@ -61,33 +61,35 @@
 .container.our_partners
 	.wrapper
 		h2 Наши партнеры
-		.slider
-			a.slider_left.prev
-			.viewport
+		.slider.thslide
+			.thslide_nav_previous
+				a.slider_left
+			.viewport.thslide_list
 				ul.overview
 					li
 						img src=image_path('partners/1.png')
-					li
+					li style="margin-left: 58px"
 						img src=image_path('partners/2.png')
-					li
+					li style="margin-left: 43px"
 						img src=image_path('partners/3.png')
-					li
+					li style="margin-left: 30px"
 						img src=image_path('partners/4.png')
-					li
+					li style="margin-left: 32px"
 						img src=image_path('partners/5.png')
-					li
+					li style="margin-left: 35px"
 						img src=image_path('partners/6.png')
-					li
+					li style="margin-left: 38px"
 						img src=image_path('partners/7.png')
-					li
+					li style="margin-left: 36px"
 						img src=image_path('partners/8.png')
-					li
+					li style="margin-left: 32px"
 						img src=image_path('partners/9.png')
-					li
+					li style="margin-left: 30px"
 						img src=image_path('partners/10.png')
-					li
+					li style="margin-left: 30px; margin-right: 30px"
 						img src=image_path('partners/11.png')
-			a.slider_right.next
+			.thslide_nav_next
+				a.slider_right
 .container.bk_promo
 	.wrapper
 		h2

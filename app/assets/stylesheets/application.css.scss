@@ -393,12 +393,8 @@ form {
 		}
 		.viewport {
 			height: 75px;
-			li {
-				@include d_i;
-				float: none;
-				vertical-align: middle;
-				width: 160px;
-				padding-left: 12px;
+			ul {
+				width: 9000px;
 			}
 		}
 	}
