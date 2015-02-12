@@ -65,7 +65,7 @@ form {
 }
 
 .overlay {
-	position: absolute;
+	position: fixed;
 	zoom: 1;
 	z-index: 1;
 	width: 100%;
@@ -386,11 +386,31 @@ form {
 			li {
 				width: 286.7px;
 				&#timer_images {
-					position: relative;
-					height: 360px;
-					img {
-						position: absolute;
-						left: 8px;
+					padding: 0 40px;
+					background-image:url(image_path('slides/3.jpg'));
+					background-position: 50% 0;
+					background-repeat: no-repeat;
+					width: 207px;
+					height: 364px;
+					color: #2f2e2d;
+					.w1 {
+						@include font_serif;
+						font-size: 60px;
+						line-height: 60px;
+						font-weight: bold;
+						margin-top: 111px;
+					}
+					.w2 {
+						@include font_serif;
+						font-size: 30px;
+						line-height: 30px;
+						margin-top: 58px;
+					}
+					.w3 {
+						font-size: 14px;
+						@include font_ptsans;
+						line-height: 14px;
+						margin-top: 26px;
 					}
 				}
 			}
