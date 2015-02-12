@@ -1,0 +1,201 @@
+[33mcommit 19ab59f2f93fab4279ad4a635992500e1557837f[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Thu Feb 12 23:11:11 2015 +0300
+
+    new slider
+
+[33mcommit 2820ab0c662f03385668a628c635fcc7a356323f[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Thu Feb 12 23:08:50 2015 +0300
+
+    Map baloon add
+
+[33mcommit fc85d92a3a50c9a70713c0adca0daa768a837ad3[m
+Merge: 414e2ee 5b6833a
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 12 21:00:23 2015 +0300
+
+    Merge branch 'master' of github.com:arzzzen/bk
+
+[33mcommit 414e2ee4fa35948ccb26147aeda450bff7a75be4[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 12 21:00:08 2015 +0300
+
+    some fixes
+
+[33mcommit 0bec159a8f66dbaacada0f976fb4516d2b0a244a[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 12 09:34:31 2015 +0300
+
+    employes
+
+[33mcommit 4c4337da2f0e633aeb2d36fe9d0b6763511e1dd7[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Wed Feb 11 16:52:42 2015 +0300
+
+    Video embeded
+
+[33mcommit 5f30b7f67525d53f1087ed0dd2b576b4691d9dd1[m
+Merge: 31f6486 d0ae187
+Author: Kein <kein.1945@gmail.com>
+Date:   Wed Feb 11 13:21:14 2015 +0300
+
+    Merge branch 'master' of https://git.heroku.com/bk-1408
+
+[33mcommit 31f6486310c694375f53f54ab6df3a95c976f0c4[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Wed Feb 11 13:21:04 2015 +0300
+
+    hz
+
+[33mcommit 5b6833a1c94061c1e5e1ec2d99a184bcc027b54d[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Wed Feb 11 09:26:59 2015 +0300
+
+    Slider change
+
+[33mcommit d0ae187eaebf5501f6f357b4f39407cc357f72d5[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Tue Feb 10 08:53:30 2015 +0300
+
+    favicon
+
+[33mcommit 2eae605a6df49517e7c5d1519ff25d10e9f5d599[m
+Merge: 1f4fd25 689538e
+Author: Kein <kein.1945@gmail.com>
+Date:   Tue Feb 10 08:40:06 2015 +0300
+
+    Merge
+
+[33mcommit 1f4fd25969f8d1afa96a017b6876d93f4e4f565c[m
+Merge: ca1d771 da270fd
+Author: Kein <kein.1945@gmail.com>
+Date:   Tue Feb 10 08:37:11 2015 +0300
+
+    Merge branch 'master' of github.com:arzzzen/bk
+
+[33mcommit da270fdd046c9cc3361c141bc8d5a66c61a0e9da[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Tue Feb 10 02:13:27 2015 +0300
+
+    slide animation
+
+[33mcommit 6f960e733a5a1283282d19478bfdf773f9489ae9[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Tue Feb 10 00:07:28 2015 +0300
+
+    omg please kill me
+
+[33mcommit 689538e66896b7bf28cf4f7b7911e59379007b3b[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Mon Feb 9 13:06:07 2015 +0300
+
+    Typo fix
+
+[33mcommit ca1d771a888a7b80a649007aeea416669279f502[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Mon Feb 9 02:31:32 2015 +0300
+
+    fixes
+
+[33mcommit 449725a6a052d3607e45cfa35d9957dce61fddbc[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Sun Feb 8 22:45:45 2015 +0400
+
+    evan me music de silen
+
+[33mcommit 008bdeed519f531f0437c2f75e809a2939508668[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Fri Feb 6 11:01:20 2015 +0300
+
+    assets path
+
+[33mcommit 7ce3f4ef9b713f351996db9a2776baaaa6514e0a[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Fri Feb 6 10:54:46 2015 +0300
+
+    Pages content
+
+[33mcommit b220e11c2a34ca957894c6eab10e2e0669493b16[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Fri Feb 6 10:54:37 2015 +0300
+
+    Better error gem
+
+[33mcommit bba1d1c8e7fe45f8a60531dd023fb8ea540687cf[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Fri Feb 6 10:32:26 2015 +0400
+
+    changes
+
+[33mcommit 1ce21acbe764f0bbde5065a880b0d692cb44bffd[m
+Merge: 3acddc0 d07d4dd
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Fri Feb 6 08:31:57 2015 +0400
+
+    Merge branch 'master' of https://github.com/arzzzen/bk
+    
+    Because it's free
+
+[33mcommit 3acddc0e2f43b7f9d6d984507f4712f2c08de006[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Fri Feb 6 08:31:03 2015 +0400
+
+    Slides add
+
+[33mcommit d07d4dd622f2ece91171a6afc0169a86825b8957[m
+Merge: 6aae68c 278140e
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Fri Feb 6 07:27:29 2015 +0300
+
+    Merge pull request #1 from Kein1945/master
+    
+    Accept!
+
+[33mcommit 278140e34745bf48ceb5255558a78d96e9c6f57f[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 5 10:08:08 2015 +0300
+
+    Typo fix
+
+[33mcommit 86391a811d55c277233d5bb5c88cfdde618681dd[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 5 09:28:27 2015 +0300
+
+    Sqlite remove
+
+[33mcommit 17dbf0df5736b751af8a98c8932a54e7f7e0c018[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 5 09:26:28 2015 +0300
+
+    Env fix
+
+[33mcommit 334f6ceca2bd0ab9e9aa0a1a1bf997e5cf1e7914[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 5 08:59:58 2015 +0300
+
+    Remove db
+
+[33mcommit 88ed92b8cb2ee7c11060e2f095237356e451c649[m
+Author: Kein <kein.1945@gmail.com>
+Date:   Thu Feb 5 08:56:32 2015 +0300
+
+    Gemfile
+
+[33mcommit 6aae68c3fa8c04804ecee73040c20f80d87bbc7d[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Thu Feb 5 03:30:11 2015 +0400
+
+    yo yo yo 4375..
+
+[33mcommit 492569562a5425b98369d0aa2128235a9c50c113[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Tue Feb 3 23:27:31 2015 +0400
+
+    another one
+
+[33mcommit f6f64ce7d74b2d3623679bf29eff3ccb5d4091c2[m
+Author: arzzzen <arzenslim@gmail.com>
+Date:   Tue Feb 3 03:25:19 2015 +0400
+
+    first commit
