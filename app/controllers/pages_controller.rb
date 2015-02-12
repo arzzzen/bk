@@ -21,6 +21,7 @@ class PagesController < ApplicationController
 <p>К вашим услугам – юристы с более чем 10-летним опытом в 350 областях экономики. Действуя в команде, мы решаем задачи в сжатые сроки и готовы приступить к работе по вашему обращению уже сейчас. </p>
 
 <p>Наша юридическая поддержка – верное средство преодоления любого кризиса.</p>",
+  header_img: 'icons/small/1.png',
   sidebar_img: 'employees/5.png',
   sidebar_desc: ''},
 
@@ -43,6 +44,7 @@ class PagesController < ApplicationController
 <p>К вашим услугам – юристы с более чем 10-летним опытом в 350 областях экономики. Действуя в команде, мы решаем задачи в сжатые сроки и готовы приступить к работе по вашему обращению уже сейчас.</p>
 
 <p>Наша юридическая поддержка – верное средство преодоления любого кризиса.</p>",
+  header_img: 'icons/small/2.png',
   sidebar_img: 'employees/4.png',
   sidebar_desc: '<span class="last_name">Баландин</span><br />Денис<br />Георгиевич<br /><span class="muted">Опыт работы: 15 лет</span>'},
       "3" => { title: "Налогове планирование", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/LojWPQa75U4\" frameborder=\"0\" allowfullscreen></iframe><p>Существуют две распространенные ошибки в налоговом планировании:</p>
@@ -66,6 +68,7 @@ class PagesController < ApplicationController
 <p>Успешное решение этих задач обеспечивает доскональное знание налоговых, бюджетных, инвестиционных тенденций в государстве.</p>
 
 <p>Выполняем также <a href='/page/5'>Бухгалтерский и управленческий учет</a></p>",
+  header_img: 'icons/small/3.png',
   sidebar_img: 'employees/1.png',
   sidebar_desc: ''},
       "4" => { title: "Абонентское обслуживание", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/dmwoUrrmXfU\" frameborder=\"0\" allowfullscreen></iframe><p>Расходы на правовую поддержку фирмы можно и нужно сократить. Добиться ощутимой экономии позволяет юридическое абонентское обслуживание.</p>
@@ -89,6 +92,7 @@ class PagesController < ApplicationController
 <li>Другие услуги. </li>
 </ul>
 <p>Мы рассчитываем на долгосрочное сотрудничество и гарантируем эффективность на каждом этапе работы.</p>",
+  header_img: 'icons/small/4.png',
   sidebar_img: 'employees/1.png',
   sidebar_desc: ''},
       "5" => { title: "Бухгалтерский и управленческий учет", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/HLi1u3ZZiOk\" frameborder=\"0\" allowfullscreen></iframe>
@@ -112,6 +116,7 @@ class PagesController < ApplicationController
 <li>Решение специализированных задач: аудит, консультирование, налоговая оптимизация.</li>
 </ul>
 <p>Аутсорсинг обеспечит экономию денежных средств при повышении качества работы. Вы получите ясную картину финансово-хозяйственного состояния компании, найдете резервы и сможете выстроить правильную стратегию развития.</p>",
+  header_img: 'icons/small/5.png',
   sidebar_img: 'employees/2.png',
   sidebar_desc: ''},
       "6" => { title: "Договоры и делопроизводство", text: "
@@ -139,6 +144,7 @@ class PagesController < ApplicationController
 <li>Фиксированные тарифы и прозрачные отношения. </li>
 </ul>
 <p>Консалтинговая группа «Белая карта» гарантирует своим клиентам правовую безопасность бизнеса.</p>",
+  header_img: 'icons/small/6.png',
   sidebar_img: 'employees/5.png',
   sidebar_desc: ''},
       "7" => { title: "Регистрация юридических лиц", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/Gue1phsbSZE\" frameborder=\"0\" allowfullscreen></iframe>
@@ -161,6 +167,7 @@ class PagesController < ApplicationController
 <li>Прочее необходимое. </li>
 </ul>
 <p>В начале работы мы называем точный срок работ, по истечении которого ваша компания будет зарегистрирована, и вы получите полный пакет соответствующих документов.</p>",
+  header_img: 'icons/small/7.png',
   sidebar_img: 'employees/3.png',
   sidebar_desc: ''},
       "8" => { title: "Ликвидация юридических лиц", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/jw4Ibz0yfZM\" frameborder=\"0\" allowfullscreen></iframe>
@@ -179,6 +186,7 @@ class PagesController < ApplicationController
 <p>Процесс требует проведения большого количества мероприятий и подготовки множества документов. Эта кропотливая работа может вызвать серьезные имущественные расходы.</p>
 
 <p>«Белая карта» снизит ваши издержки в процессе закрытия компании и сократит время, отводимое на ликвидационные процедуры. В нашем штате достаточное число юристов, способных эффективно решить данную задачу традиционными или альтернативными способами.</p>",
+  header_img: 'icons/small/8.png',
   sidebar_img: 'employees/2.png',
   sidebar_desc: ''},
       "9" => { title: "Регистрация товарных знаков", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/KS8Bl4Qr9b0\" frameborder=\"0\" allowfullscreen></iframe>
@@ -201,6 +209,7 @@ class PagesController < ApplicationController
 <li>Получение свидетельства в кратчайшие сроки. </li>
 </ul>
 <p>Сотрудничая с нами, вы можете рассчитывать на оперативную информационную поддержку в течение рабочего времени.</p>",
+  header_img: 'icons/small/9.png',
   sidebar_img: 'employees/4.png',
   sidebar_desc: '<span class="last_name">Баландин</span><br />Денис<br />Георгиевич<br /><span class="muted">Опыт работы: 15 лет</span>'},
     }
@@ -215,6 +224,7 @@ class PagesController < ApplicationController
     @title = @post[:title]
     @sidebar_img = @post[:sidebar_img]
     @sidebar_desc = @post[:sidebar_desc]
+    @header_img = @post[:header_img]
     @id = id
     render "inner"
 	end
