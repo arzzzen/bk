@@ -14,14 +14,31 @@ $.fn.contactMap = function() {
                 	        });
                         contMap.behaviors.disable('scrollZoom');
 
-                		myPlacemark = new ymaps.Placemark(addrCoords, {}, {
-                			iconLayout: 'default#image',
-                			iconImageHref: '/assets/ymap_placem.png',
-                	        iconImageSize: [46, 51],
-                	        iconImageOffset: [-23, -51],
-                            balloonContent: '<h3>Телефон</h3><p>(812) 648 02 67<br><a href="#" id="request_call">Заказать звонок</a></p><h3>Адрес</h3><p>191015, Санкт-Петербург,<br>Шпалерная ул. , 51, офис 561</p>'
+                		myPlacemark = new ymaps.Placemark(addrCoords, {
+                            balloonContent: '<div class="ymap_baloon"><div class="contact_us_close"></div><h3>Телефон</h3><p>(812) 648 02 67<br><a href="#" class="request_call_link">Заказать звонок</a></p><h3>Адрес</h3><p>191015, Санкт-Петербург,<br>Шпалерная ул. , 51, офис 561</p></div>'
+                        },{
+                            iconLayout: 'default#image',
+                            iconImageHref: '/assets/ymap_placem.png',
+                            iconImageSize: [46, 51],
+                            iconImageOffset: [-23, -51],
+                            // Размеры содержимого балуна
+                            balloonContentSize: [260, 218],
+                            // Задаем макет балуна - пользовательская картинка с контентом
+                            balloonLayout: "default#imageWithContent",
+                            // Картинка балуна
+                            balloonImageHref: '/ymap_baloon.png',
+                            // Смещение картинки балуна
+                            balloonImageOffset: [-188, 0],
+                            // Размеры картинки балуна
+                            balloonImageSize: [260, 233],
+                            // Балун не имеет тени
+                            balloonShadow: false,
                 		});
                         contMap.geoObjects.add(myPlacemark);
+
+                        $('body').on('click', '.ymap_baloon .contact_us_close', function() {
+                            contMap.balloon.close();
+                        });
                         // myPlacemark.events.add('click', function (placemark) {
                         //     $(window).scrollTop(0)
                         //     modal($('.request_call')).open();

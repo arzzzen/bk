@@ -171,54 +171,6 @@ form {
 				}
 			}
 		}
-		.contact_us_popup {
-			display: none;
-			@include font_ptsans;
-			position: absolute;
-			background-color: #fff;
-			border: 1px solid #cccccc;
-			border-radius: 14px;
-			top: 90px;
-			right: 0;
-			z-index: 2;
-			padding: 30px 42px 16px;
-			width: 181px;
-			font-size: 14px;
-			color: #3e3e3e;
-			h3 {
-				@include font_roboto;
-				font-size: 18px;
-				font-weight: 300;
-				margin: 0;
-				color: #7a7a7a;
-			}
-			a {
-				color: #225f86;
-				border-bottom: 1px dashed;
-				&:hover,
-				&.hover {
-					border-bottom: none;
-				}
-			}
-			.contact_us_close {
-				@include d_i;
-				position: absolute;
-				background-image: url(image_path('contact_us_close.png'));
-				width: 14px;
-				height: 14px;
-				top: 28px;
-				right: 28px;
-				cursor: pointer;
-			}
-			.contact_us_arrow {
-				position: absolute;
-				background-image: url(image_path('contact_us_arrow.png'));
-				width: 30px;
-				height: 16px;
-				top: -16px;
-				right: 57px;
-			}
-		}
 	}
 	.logo {
 		@include d_i;
@@ -778,5 +730,68 @@ form {
 		cursor: pointer;
 		width: 54px;
 		height: 54px;
+	}
+}
+
+.contact_us_popup {
+	display: none;
+	@include font_ptsans;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 14px;
+	top: 90px;
+	right: 0;
+	z-index: 2;
+	padding: 30px 42px 16px;
+	width: 181px;
+	font-size: 14px;
+	color: #3e3e3e;
+	h3 {
+		@include font_roboto;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 0;
+		color: #7a7a7a;
+	}
+	a {
+		color: #225f86;
+		border-bottom: 1px dashed;
+		&:hover,
+		&.hover {
+			border-bottom: none;
+		}
+	}
+	.contact_us_close {
+		@include d_i;
+		position: absolute;
+		background-image: url(image_path('contact_us_close.png'));
+		width: 14px;
+		height: 14px;
+		top: 28px;
+		right: 28px;
+		cursor: pointer;
+	}
+	.contact_us_arrow {
+		position: absolute;
+		background-image: url(image_path('contact_us_arrow.png'));
+		width: 30px;
+		height: 16px;
+		top: -16px;
+		right: 57px;
+	}
+}
+
+.ymap_baloon {
+	@extend .contact_us_popup;
+	display: block;
+	margin-top: 18px;
+	position: static;
+	background-color: none;
+	border: none;
+	width: auto;
+	text-align: left;
+	.contact_us_close {
+		top: 46px;
 	}
 }

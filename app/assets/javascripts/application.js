@@ -19,7 +19,7 @@ $(function() {
 
 	$('#map').contactMap();
 
-	$('#request_call').on('click', function(e) {
+	$('body').on('click', '.request_call_link', function(e) {
 		e.preventDefault();
 		$('.contact_us').trigger('click');
 		modal($('.request_call')).open();
