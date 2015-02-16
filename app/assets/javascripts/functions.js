@@ -1,5 +1,6 @@
 $.fn.contactMap = function() {
-    var addrCoords = [59.948509136999404, 30.3842618971461]
+    // var addrCoords = [59.948509136999404, 30.3842618971461]
+    var addrCoords = [59.948429, 30.384401]
     	,zoom = 17
     	,$map = $('#map');
 	return $(this).each(function() {

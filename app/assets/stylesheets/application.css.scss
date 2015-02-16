@@ -393,12 +393,8 @@ form {
 		}
 		.viewport {
 			height: 75px;
-			li {
-				@include d_i;
-				float: none;
-				vertical-align: middle;
-				width: 160px;
-				padding-left: 12px;
+			ul {
+				width: 9000px;
 			}
 		}
 	}
@@ -536,8 +532,8 @@ form {
 		margin: 0;
 		font-size: 30px;
 		font-weight: 300;
-		height: 107px;
-		line-height: 107px;
+		height: 105px;
+		line-height: 105px;
 		padding-left: 120px;
 	}
 	.path {
@@ -546,7 +542,7 @@ form {
 		background-repeat: no-repeat;
 		background-position: top left;
 		width: 173px;
-		height: 107px;
+		height: 105px;
 		left: -62.5px;
 		top: 0;
 	}
