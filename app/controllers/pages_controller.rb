@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 	def page
 		texts = {
-      "1" => {title: "Безопасность бизнеса", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/cjGEF59GzVU?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Для сохранения и приумножения доли бизнеса на рынке важна эффективная организация разных аспектов бизнеса: начиная от управления персоналом и заканчивая правовыми отношениями с третьими лицами.</p><p>Добиться эффективности в условиях меняющегося законодательства и новых рисков позволяет профессиональная юридическая поддержка.</p><p>Бизнес-консалтинг жизненно необходим организациям, испытывающим кризисные явления. Юристы, обладающие широкой практикой в отрасли, способны устранить риски, нормализовать деятельность организации и заложить правовой фундамент для её устойчивого развития.</p>
+      "1" => {title: "Безопасность бизнеса", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/KS8Bl4Qr9b0?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Для сохранения и приумножения доли бизнеса на рынке важна эффективная организация разных аспектов бизнеса: начиная от управления персоналом и заканчивая правовыми отношениями с третьими лицами.</p><p>Добиться эффективности в условиях меняющегося законодательства и новых рисков позволяет профессиональная юридическая поддержка.</p><p>Бизнес-консалтинг жизненно необходим организациям, испытывающим кризисные явления. Юристы, обладающие широкой практикой в отрасли, способны устранить риски, нормализовать деятельность организации и заложить правовой фундамент для её устойчивого развития.</p>
 
 <p>Специалисты консалтинговой группы «Белая карта» найдут пути выхода из кризиса и обеспечат эффективность бизнеса.</p>
 
@@ -22,8 +22,8 @@ class PagesController < ApplicationController
 
 <p>Наша юридическая поддержка – верное средство преодоления любого кризиса.</p>",
   header_img: 'icons/small/1.png',
-  sidebar_img: 'employees/5.png',
-  sidebar_desc: '<span class="last_name">Симонова</span><br />Анастасия'},
+  sidebar_img: 'employees/4.png',
+  sidebar_desc: '<span class="last_name">Баландин</span><br />Денис<br />Георгиевич<br /><span class="muted">Опыт работы: 18 лет</span>'},
 
       "2" => { title: "Бизнес консалтинг", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/5LAoqwXME2w?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Для сохранения и приумножения доли бизнеса на рынке важна эффективная организация разных аспектов бизнеса: начиная от управления персоналом и заканчивая правовыми отношениями с третьими лицами.</p>
 
@@ -46,7 +46,7 @@ class PagesController < ApplicationController
 <p>Наша юридическая поддержка – верное средство преодоления любого кризиса.</p>",
   header_img: 'icons/small/2.png',
   sidebar_img: 'employees/4.png',
-  sidebar_desc: '<span class="last_name">Баландин</span><br />Денис<br />Георгиевич<br /><span class="muted">Опыт работы: 15 лет</span>'},
+  sidebar_desc: '<span class="last_name">Баландин</span><br />Денис<br />Георгиевич<br /><span class="muted">Опыт работы: 18 лет</span>'},
       "3" => { title: "Налогове планирование", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/LojWPQa75U4?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Существуют две распространенные ошибки в налоговом планировании:</p>
 <ul style='list-style: none'>
 <li>1) Недостаточная оптимизация;</li>
@@ -70,8 +70,8 @@ class PagesController < ApplicationController
 <p>Выполняем также <a href='/page/5'>Бухгалтерский и управленческий учет</a></p>",
   header_img: 'icons/small/3.png',
   sidebar_img: 'employees/1.png',
-  sidebar_desc: '<span class="last_name">Глушко</span><br />Ирина<br/>Алексеевна'},
-      "4" => { title: "Абонентское обслуживание", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/dmwoUrrmXfU?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Расходы на правовую поддержку фирмы можно и нужно сократить. Добиться ощутимой экономии позволяет юридическое абонентское обслуживание.</p>
+  sidebar_desc: '<span class="last_name">Глушко</span><br />Ирина<br/>Алексеевна<br/><span class="muted">Опыт работы: 20 лет</span>'},
+      "4" => { title: "Абонентское обслуживание", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/cjGEF59GzVU?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe><p>Расходы на правовую поддержку фирмы можно и нужно сократить. Добиться ощутимой экономии позволяет юридическое абонентское обслуживание.</p>
 
 <p>Постоянное сопровождение вашей финансово-хозяйственной деятельности силами специализированной компании имеет неоспоримые плюсы:</p>
 <ul style='list-style: none'>
@@ -93,9 +93,9 @@ class PagesController < ApplicationController
 </ul>
 <p>Мы рассчитываем на долгосрочное сотрудничество и гарантируем эффективность на каждом этапе работы.</p>",
   header_img: 'icons/small/4.png',
-  sidebar_img: 'employees/1.png',
-  sidebar_desc: '<span class="last_name">Глушко</span><br />Ирина<br/>Алексеевна'},
-      "5" => { title: "Бухгалтерский и управленческий учет", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/HLi1u3ZZiOk?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
+  sidebar_img: 'employees/5.png',
+  sidebar_desc: '<span class="last_name">Симонова</span><br />Анастасия<br/><span class="muted">Опыт работы: 8 лет</span>'},
+      "5" => { title: "Бухгалтерский и управленческий учет", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/dmwoUrrmXfU?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
 <ul>
 <li>Получить достоверные данные о финансово-хозяйственной деятельности фирмы;</li>
 <li>Отследить эффективность персонала на всех уровнях;</li>
@@ -117,9 +117,9 @@ class PagesController < ApplicationController
 </ul>
 <p>Аутсорсинг обеспечит экономию денежных средств при повышении качества работы. Вы получите ясную картину финансово-хозяйственного состояния компании, найдете резервы и сможете выстроить правильную стратегию развития.</p>",
   header_img: 'icons/small/5.png',
-  sidebar_img: 'employees/2.png',
-  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария'},
-      "6" => { title: "Договоры и делопроизводство", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/N1uLJc6PT44?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
+  sidebar_img: 'employees/1.png',
+  sidebar_desc: '<span class="last_name">Глушко</span><br />Ирина<br/>Алексеевна<br/><span class="muted">Опыт работы: 20 лет</span>'},
+      "6" => { title: "Договоры и делопроизводство", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/HLi1u3ZZiOk?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
 <p>Цена ошибок в договорах слишком высока, чтобы экономить на качественной подготовке документации. Юридическое сопровождение сделок и профессиональное ведение делопроизводства – два кита безопасности вашего бизнеса.</p>
 
 <p>Возможные последствия ошибок в документах:</p>
@@ -145,8 +145,8 @@ class PagesController < ApplicationController
 </ul>
 <p>Консалтинговая группа «Белая карта» гарантирует своим клиентам правовую безопасность бизнеса.</p>",
   header_img: 'icons/small/6.png',
-  sidebar_img: 'employees/3.png',
-  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария'},
+  sidebar_img: 'employees/2.png',
+  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария<br/><span class="muted">Опыт работы: 7 лет</span>'},
       "7" => { title: "Регистрация юридических лиц", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/Gue1phsbSZE?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
 <p>Российское законодательство ежегодно претерпевает изменения. А взаимоотношения с государственными органами не становятся проще. Сегодня регистрация компаний – такой же длительный и трудоемкий процесс, как и 5-10 лет назад.</p>
 
@@ -169,8 +169,8 @@ class PagesController < ApplicationController
 <p>В начале работы мы называем точный срок работ, по истечении которого ваша компания будет зарегистрирована, и вы получите полный пакет соответствующих документов.</p>",
   header_img: 'icons/small/7.png',
   sidebar_img: 'employees/3.png',
-  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария'},
-      "8" => { title: "Ликвидация юридических лиц", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/jw4Ibz0yfZM?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
+  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария<br/><span class="muted">Опыт работы: 10 лет</span>'},
+      "8" => { title: "Ликвидация юридических лиц", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/N1uLJc6PT44?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
 <p>По российскому законодательству ликвидация юридических лиц – многоэтапный и продолжительный процесс. Он особенно сложен для компаний с долгами. В ряде случаев закрытие юрлица может занимать до 2-3 лет.</p>
 
 <p>На первом этапе акционерами или участниками принимается решение о ликвидации организации. В течение 3 суток соответствующее извещение направляется в территориальное подразделение ФНС.</p>
@@ -187,8 +187,8 @@ class PagesController < ApplicationController
 
 <p>«Белая карта» снизит ваши издержки в процессе закрытия компании и сократит время, отводимое на ликвидационные процедуры. В нашем штате достаточное число юристов, способных эффективно решить данную задачу традиционными или альтернативными способами.</p>",
   header_img: 'icons/small/8.png',
-  sidebar_img: 'employees/2.png',
-  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария'},
+  sidebar_img: 'employees/3.png',
+  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария<br/><span class="muted">Опыт работы: 10 лет</span>'},
       "9" => { title: "Регистрация товарных знаков", text: "<iframe width=\"540\" height=\"304\" src=\"https://www.youtube.com/embed/jw4Ibz0yfZM?showsearch=0&playlist=&modestbranding=1&egm=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>
 <p>Если вы намерены зарегистрировать товарный знак, то должны представлять, какой длительный и трудоемкий процесс вам предстоит.</p>
 
@@ -210,8 +210,8 @@ class PagesController < ApplicationController
 </ul>
 <p>Сотрудничая с нами, вы можете рассчитывать на оперативную информационную поддержку в течение рабочего времени.</p>",
   header_img: 'icons/small/9.png',
-  sidebar_img: 'employees/4.png',
-  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария'},
+  sidebar_img: 'employees/2.png',
+  sidebar_desc: '<span class="last_name">Медведева</span><br />Мария<br/><span class="muted">Опыт работы: 7 лет</span>'},
     }
     id = 1
     if texts[params[:id]]
