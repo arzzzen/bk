@@ -719,6 +719,36 @@ form {
 			width: 100%;
 			height: 358px;
 		}
+		&.letter {
+			background-repeat: repeat-y;
+			height: auto;
+			padding: 70px 65px;
+			img {
+				width: 100%;
+			}
+			&:before {
+				content: ' ';
+				position: absolute;
+				width: 882px;
+				height: 209px;
+				left: -12px;
+				top: -28px;
+				background-repeat: no-repeat;
+				background-image: url(image_path('testimonial_rotated_top.png'));
+				z-index: -1;
+			}
+			&:after {
+				content: ' ';
+				position: absolute;
+				width: 882px;
+				height: 209px;
+				left: -12px;
+				bottom: -28px;
+				background-repeat: no-repeat;
+				background-image: url(image_path('testimonial_rotated_bottom.png'));
+				z-index: -1;
+			}
+		}
 	}
 	.testimonials_more {
 		@include d_i;

@@ -126,7 +126,7 @@ $(function() {
 				if (count > 2) {
 					clearInterval(interval);
 					$('.testimonial').removeClass('last');
-					$('#additional_testimonials .testimonial:last').addClass('.last');
+					$('#additional_testimonials .testimonial:last').addClass('last');
 					$('#additional_testimonials').removeClass('hidden');
 					$that.remove();
 				} else {
